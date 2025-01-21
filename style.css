@@ -26,8 +26,8 @@ body {
   }
 
   .instagram-logo {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -40,7 +40,7 @@ body {
 
   .instagram-handle {
     font-family: 'Comic Sans MS', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 10px;
     color: #333;
   }
