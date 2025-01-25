@@ -1,46 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Straysandme - A platform dedicated to helping strays."
-    />
-    <meta property="og:title" content="Straysandme" />
-    <meta
-      property="og:description"
-      content="Join us in making a difference for strays."
-    />
-    <meta property="og:image" content="URL-to-image" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Straysandme</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-      /* General Styles */
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-      }
-
-      .container {
-        text-align: center;
-        padding: 20px;
-      }
-
-      .logo-section img,
-      .sub-logo-section img,
-      .additional-logo-section img,
-      .final-logo-section img,
-      .f-logo-section img {
-        max-width: 100%;
-        height: auto;
-        margin: 10px 0;
-        background-color: #ffc736;
-
-        
-      }
-
-      /* Popup Styles */
+        /* Popup Styles */
+          /* Popup Styles */
       .popup {
         display: none;
         position: fixed;
@@ -97,115 +64,85 @@
           opacity: 0;
         }
       }
-
-      @media (max-width: 768px) {
-        .popup img {
-          max-width: 95%; /* Ensure better visibility on smaller screens */
-        }
-      }
-
-      /* General Instagram Logo Styling */
-      .instagram-logo {
-        width: 100px; /* Default size for desktop */
-        height: 100px;
-        transition: transform 0.3s ease;
-      }
-
-      /* Hover Effect (Optional) */
-      .instagram-logo:hover {
-        transform: scale(1.1); /* Slight enlargement on hover */
-      }
-
-      /* Mobile-specific Styling */
-      @media (max-width: 768px) {
-        .instagram-logo {
-          width: 40px; /* Smaller size for mobile */
-          height: 40px;
-        }
-      }
-       /* Mobile-specific Styling */
-       @media (min-width: 768px) {
-        .instagram-logo {
-          width: 40px; /* Smaller size for mobile */
-          height: 40px;
-        }
-      }
     </style>
-  </head>
-  <body>
+</head>
+<body>
+
     <div class="container">
-      <!-- Logo Section -->
-      <div class="logo-section">
-        <img src="Imag1-Homepage.png" alt="SAM Logo" />
-      </div>
+        <!-- Logo Section -->
+        <div class="logo-section">
+            <img src="2.png" alt="SAM Logo">
+        </div>
 
-      <!-- Sub Logo Section -->
-      <div class="sub-logo-section">
-        <img src="3.png" alt="Sub Logo" />
-      </div>
+        <!-- Sub Logo Section -->
+        <div class="sub-logo-section">
+            <img src="3.png" alt="Sub Logo">
+        </div>
 
-      <!-- Additional Logo Sections -->
-      <div class="additional-logo-section">
-        <img src="15.png" alt="Additional Logo" />
-      </div>
-      <div class="additional-logo-section">
-        <img src="14.png" alt="Additional Logo" />
-      </div>
-      <div class="additional-logo-section">
-        <img src="f.png" alt="Additional Logo" />
-      </div>
+        <!-- Additional Logo Sections -->
+        <div class="additional-logo-section">
+            <img src="15.png" alt="Additional Logo">
+        </div>
+        <div class="additional-logo-section">
+            <img src="14.png" alt="Additional Logo">
+        </div>
+        <div class="additional-logo-section">
+            <img src="f.png" alt="Additional Logo" />
+          </div>
+        <!-- Final Logo Section -->
+        <div class="final-logo-section">
+            <img src="8.png" alt="Final Logo" />
+          </div>
+          
 
-      <!-- Final Logo Section -->
-      <div class="final-logo-section">
-        <img src="8.png" alt="Final Logo" />
-      </div>
+        <div class="instagram-section">
+            <a href="https://instagram.com/straysandme" target="_blank">
+              <img
+                class="instagram-logo"
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+                alt="Instagram"
+              />
+            </a>
+          </div>
 
-      <!-- Instagram Section -->
-      <div class="instagram-section">
-        <a href="https://instagram.com/straysandme" target="_blank">
-          <img
-            class="instagram-logo"
-            src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
-            alt="Instagram"
-          />
-        </a>
-      </div>
+        <div class="f-logo-section">
+            <img src="111.png" alt="F Logo">
+        </div>
 
-      <!-- F Logo Section -->
-      <div class="f-logo-section">
-        <img src="111.png" alt="F Logo" />
-      </div>
-
-      <!-- Popup Image -->
-      <div id="popup" class="popup">
-        <button class="close-btn" onclick="closePopup()">X</button>
-        <img id="popup-img" src="pop-lap.png" alt="Popup Image" />
-      </div>
+        <!-- Popup Image -->
+        <div id="popup" class="popup">
+            <button class="close-btn" onclick="closePopup()">X</button>
+            <img id="popup-img" src="pop-lap.png" alt="Popup Image" />
+          </div>
     </div>
 
     <script>
-      // Show popup after 3 seconds
-      setTimeout(() => {
-        const popup = document.getElementById("popup");
-        const popupImg = document.getElementById("popup-img");
-
-        // Adjust image source based on screen width
-        popupImg.src = window.innerWidth < 768 ? "pop-mob.png" : "pop-lap.png";
-        popup.style.display = "block";
-      }, 3000);
-
-      // Close popup function
-      function closePopup() {
-        document.getElementById("popup").style.display = "none";
-      }
-    </script>
-
-    <!-- No JavaScript Warning -->
-    <noscript>
-      <p style="text-align: center; color: red">
-        JavaScript is required to view the popup. Please enable JavaScript in
-        your browser settings.
-      </p>
-    </noscript>
-  </body>
+        // Show popup after 3 seconds
+setTimeout(() => {
+    const popup = document.getElementById("popup");
+    const popupImg = document.getElementById("popup-img");
+  
+    // Adjust image source based on screen width
+    if (popupImg) {
+      popupImg.src = window.innerWidth < 768 ? "pop-mob.png" : "pop-lap.png";
+    }
+  
+    popup.style.display = "flex"; // Use 'flex' to center-align the popup
+  }, 3000);
+  
+  // Close popup function
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
+  }
+  
+      </script>
+  
+      <!-- No JavaScript Warning -->
+      <noscript>
+        <p style="text-align: center; color: red">
+          JavaScript is required to view the popup. Please enable JavaScript in
+          your browser settings.
+        </p>
+      </noscript>
+</body>
 </html>
