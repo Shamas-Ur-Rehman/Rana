@@ -10,6 +10,8 @@ body {
   .logo-section img, .sub-logo-section img, .additional-logo-section img, .final-logo-section img {
     max-width: 100%;
     max-height: 90%;
+    background-color: #ffc736;
+
   }
 
   body {
@@ -20,7 +22,7 @@ body {
     
   }
 .sub-logo-section{
-  border-radius: 20px;
+  background-color: #ffc736;
 }
   /* Instagram Section */
   .instagram-section {
